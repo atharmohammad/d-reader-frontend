@@ -5,6 +5,7 @@ import Main from 'components/layout/Main'
 import useTransaction from 'hooks/useTransaction'
 import { Button, TextField, Typography } from '@mui/material'
 // import { useFetchMintTransaction } from 'api/playground'
+import MintComponent from './_index'
 import http from 'api/http'
 import { Box } from '@mui/system'
 import { useState } from 'react'
@@ -98,6 +99,7 @@ const Home: NextPage = () => {
 						{lastTransaction || '------'}
 					</span>
 				</Typography>
+				<MintComponent/>
 			</Main>
 
 			<Footer />
